@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-edge: var(--edge);
+  --color-primary: var(--primary-brand);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-stone: var(--color-stone-500)
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --primary-brand: oklch(71.5% 0.143 215.221);
+  --primary-foreground: oklch(0.985 0 0);
+  --background: oklch(1 0 0);
+  --border: oklch(0.92 0.004 286.32);
+  --edge: color-mix(in oklab, var(--border) 64%, var(--background));
+}
+
+
+.dark {
+  --background: oklch(20% 0.03 240);
+  --foreground: oklch(95% 0.02 250);
+  --primary-brand: oklch(70% 0.2 230);
+  --primary-foreground: oklch(100% 0 0);
+  --border: oklch(40% 0.01 250);
+  --edge: color-mix(in oklab, var(--border) 64%, var(--background));
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(38, 37, 37);
+  /* background: url("/dust.svg"), linear-gradient(to bottom, #272727, #150F0F) no-repeat center center fixed; */
+  height: 100vh;
+  width: 100vw;
+  color: white;
+
 }
