@@ -4,6 +4,9 @@ import Github from '@/components/icons/github'
 import Phone from '@/components/icons/phone'
 import Envelope from '@/components/icons/envelope'
 import Linkedin from '@/components/icons/linkedin'
+import { USER } from '@/data/user'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Socials = () => {
     return (
@@ -11,24 +14,23 @@ const Socials = () => {
             <Button />
 
             <div className='space-x-3 col-span-4 rounded-lg flex items-center justify-center'>
-                <a href="https://github.com/shivam-vishwakarma" target="_blank" rel="noreferrer" className='group
-                '>
-                    <Github className=" text-neutral-500 shadow-3xl shadow-red-800" size={39} />
-                </a>
-                <a href="https://github.com/shivam-vishwakarma" target="_blank" rel="noreferrer">
-                    <Linkedin className="text-neutral-500" size={39} />
-                </a>
-                <a href="https://github.com/shivam-vishwakarma" target="_blank" rel="noreferrer">
-                    <Phone className=" text-neutral-500" size={39} />
-                </a>
-
-                <a href="https://github.com/shivam-vishwakarma" target="_blank" rel="noreferrer">
-                    <Envelope className=" text-neutral-500" size={39} />
-                </a>
+                {
+                    USER.socialLinks.map((socials) => (
+                        <a key={socials.name} href={socials.url} target="_blank" rel="noreferrer" className='group'>
+                            <img className="text-neutral-500 shadow-3xl size-8" src={socials.icon} alt={socials.name} />
+                        </a>
+                    ))
 
 
-            </div>
-        </div>
+                }
+                <Link href="mailto:admin@shivam09.tech">
+                    <Envelope className="text-neutral-500 shadow-3xl size-10" />
+                </Link>
+
+
+
+            </div >
+        </div >
     )
 }
 

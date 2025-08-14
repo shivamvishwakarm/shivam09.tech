@@ -11,12 +11,16 @@ export default function Home() {
   return (
     <div className="relative">
       <div className="max-w-3xl mx-auto absolute inset-0 h-screen w-full z-[-1] pointer-events-none">
-        <div className="absolute inset-y-0 left-0 h-full w-[0.5px] bg-gradient-to-b from-stone-500 via-[var(--color-primary)]/70 to-[var(--color-primary)] opacity-50" />
-        <div className="absolute inset-y-0 right-0 h-full w-[0.5px] bg-gradient-to-b from-stone-500 via-[var(--color-primary)]/70 to-[var(--color-primary)] opacity-50" />
+        <div className="absolute inset-y-0 left-0 h-[68.5%] w-px bg-gradient-to-b from-secondary via-primary to-primary opacity-50" />
+        <div className="absolute inset-y-0 right-0 h-full w-[0.5px] bg-gradient-to-b from-secondary via-primary to-primary opacity-50" />
       </div>
 
       <div className="absolute inset-0 h-screen w-full z-0 pointer-events-none">
-        {/* <div className="absolute -top-[145px] left-[119px] h-[200vh] w-px rounded-full bg-gradient-to-b from-[var(--color-primary)] to-stone-500 transform rotate-90 opacity-50" /> */}
+        <div className="relative flex h-1 w-full border-edge top-10
+            before:absolute before:-left-[100vw] before:-z-[1] 
+            before:h-[0.5px] before:w-[176.1vw]
+            before:bg-gradient-to-b before:from-secondary before:to-primary">
+        </div>
       </div>
 
 
@@ -28,7 +32,7 @@ export default function Home() {
           <Profile />
           <div className="space-y-2 mt-8">
             <div>
-              <h1 className="text-5xl font-bold text-neutral-200">
+              <h1 className="md:text-5xl text-2xl font-bold text-neutral-200">
                 Shivam Vishwakarma
               </h1>
 
@@ -40,17 +44,19 @@ export default function Home() {
         </div>
 
 
-
-        {/* <Experience /> */}
+        <div className="h-px rounded-full w-full bg-[#565656]" />
+        <Experience />
         <Separator />
-        {/* <Projects />
+        <Projects />
 
-        <Footer /> */}
+
 
 
 
       </div>
-
-    </div>
+      <div className="flex items-center justify-center w-full ">
+        <p className=" my-10 bg-clip-text text-transparent bg-gradient-to-b to-neutral-100 via-neutral-200 from-neutral-600 items-center ">Work in progress...</p>
+      </div>
+    </div >
   );
 }

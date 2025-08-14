@@ -1,3 +1,4 @@
+
 export const USER = {
     firstName: "Shivam",
     lastName: "Vishwakarma",
@@ -30,12 +31,23 @@ export const USER = {
         {
             company: "Advayu",
             position: "Full Stack Developer",
+            description: `
+    Built the entire frontend using Next.js, TypeScript, Redux, Tailwind CSS, and TanStack Query. 
 
+    Integrated APIs and added real-time features. Wrote unit, integration, and end-to-end tests using Jest, Cypress, and Storybook.
+
+    Worked closely with backend and design teams to deliver a fast and responsive site.
+    `,
             website: "https://www.advayu.club"
         },
         {
             company: "",
             position: "Freelance Developer",
+            description: `
+    Completed 4 full-stack projects for clients on time. Handled both frontend and backend using React, Next.js, Node.js, and MongoDB.
+
+    Built custom features, APIs, and user interfaces. Focused on clean, maintainable code and mobile-friendly design.
+    `,
             website: "https://www.shivam09.tech"
         }
     ],
@@ -54,16 +66,20 @@ And I try to prove that with every project I take on.`,
             name: "RebelsFly",
             description: "Landing page for aviation institute",
             url: "https://www.rebelsfly.com",
-            image: "https://www.rebelsfly.com/Logo.png",
+            image: "https://drive.google.com/uc?export=view&id=13ccQhtW_WmFDqNhL4nKUrISOEEZxtovC",
         },
         {
-            name: "matram seva foundation",
-            description: "Landing page of a NGO",
-            url: "https://www.matram-seva.org",
-            image: "https://www.matram-seva.org/wp-content/uploads/2022/03/MSF-logo-1.png",
+            name: "Snake and Ladder",
+            description: "A websocket package for snake and ladder game",
+            url: "https://www.npmjs.com/package/snake-ladder-ws",
+            image: "https://drive.google.com/uc?export=view&id=1KvEPcGY7gphXW4nHhKoMQxA5L0TElLIc",
+        },
+        {
+            name: "File uploader",
+            description: "A file uploader for the web package",
+            url: "https://github.com/shivamvishwakarm/file-upload-ui-library",
+            image: "https://drive.google.com/uc?export=view&id=1uvk8EwvnSMUlTjFFCqKxlwjFhGe9Zelz",
         }
-
-
     ]
 
 

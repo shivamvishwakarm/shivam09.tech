@@ -1,22 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
+import ProjectCard from './project-card'
+import { USER } from '@/data/user'
 const Projects = () => {
     return (
-        <div className='px-4'>
-            <h1 className='text-neutral-500 text-2xl font-semibold mt-10'>Projects</h1>
-            <div className='flex flex-row justify-between items-center'>
-                <div className='w-72  bg-linear-to-b from-neutral-500 to-neutral-900 rounded-lg p-2 space-y-4 border border-neutral-800 border-opacity-50 flex flex-col items-center justify-center shadow-sm shadow-neutral-800'>
-                    <Image src="/snake-ladder-npm.png" alt="snake" width={500} height={500} />
-                    <p className='bottom-0 text-neutral-400 font-thin text-lg'>Snake and Ladder WS Package</p>
+        <div className='px-4 mt-10 transform md:-translate-x-40 '>
+            <div className='flex md:flex-row flex-col gap-4 justify-between items-center'>
+                {
+                    USER.projects.map((project) => (
+                        <ProjectCard
+                            key={project.name}
+                            name={project.name}
+                            description={project.description}
+                            url={project.url}
+                            image={project.image}
+                        />
+                    ))
+                }
 
-                </div>
-                <div className='w-72  bg-linear-to-b from-neutral-500 to-neutral-900 rounded-lg p-2 space-y-4 border border-neutral-800 border-opacity-50 flex flex-col items-center justify-center shadow-sm shadow-neutral-800'>
-                    <Image src="/snake-ladder-npm.png" alt="snake" width={500} height={500} />
-                    <p className='bottom-0 text-neutral-400 font-thin text-lg'>Workshop Leager</p>
-
-                </div>
             </div>
         </div>
+
     )
 }
 
