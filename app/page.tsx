@@ -1,5 +1,4 @@
 import Experience from "@/components/experience";
-import Footer from "@/components/footer";
 import Profile from "@/components/Profile";
 import Projects from "@/components/projects";
 import Separator from "@/components/seperator";

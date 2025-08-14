@@ -1,5 +1,4 @@
 import React from 'react'
-import script from 'next/script'
 const LinkedinBadge = () => {
     return (
         <>

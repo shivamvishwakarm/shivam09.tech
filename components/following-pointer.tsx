@@ -65,19 +65,22 @@ export const FollowPointer = ({
     y,
     title,
 }: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     x: any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     y: any;
+
     title?: string | React.ReactNode;
 }) => {
-    const colors = [
-        "#0ea5e9",
-        "#737373",
-        "#14b8a6",
-        "#22c55e",
-        "#3b82f6",
-        "#ef4444",
-        "#eab308",
-    ];
+    // const colors = [
+    //     "#0ea5e9",
+    //     "#737373",
+    //     "#14b8a6",
+    //     "#22c55e",
+    //     "#3b82f6",
+    //     "#ef4444",
+    //     "#eab308",
+    // ];
     return (
         <motion.div
             className="absolute z-50 h-4 w-4 rounded-full"

@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import ProjectCard from './project-card'
 import { USER } from '@/data/user'
 const Projects = () => {

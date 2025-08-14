@@ -1,12 +1,9 @@
 import React from 'react'
 import Button from './button'
-import Github from '@/components/icons/github'
-import Phone from '@/components/icons/phone'
 import Envelope from '@/components/icons/envelope'
-import Linkedin from '@/components/icons/linkedin'
 import { USER } from '@/data/user'
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Socials = () => {
     return (
@@ -17,7 +14,7 @@ const Socials = () => {
                 {
                     USER.socialLinks.map((socials) => (
                         <a key={socials.name} href={socials.url} target="_blank" rel="noreferrer" className='group'>
-                            <img className="text-neutral-500 shadow-3xl size-8" src={socials.icon} alt={socials.name} />
+                            <Image className="text-neutral-500 shadow-3xl size-8" src={socials.icon} alt={socials.name} width={20} height={20} />
                         </a>
                     ))
 
