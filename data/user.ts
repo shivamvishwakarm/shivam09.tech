@@ -1,4 +1,9 @@
-
+import Envelope from "@/components/icons/envelope";
+import Github from "@/components/icons/github";
+import Linkedin from "@/components/icons/linkedin";
+import Phone from "@/components/icons/phone";
+import Twitter from "@/components/icons/twitter";
+import { desc } from "motion/react-client";
 export const USER = {
     firstName: "Shivam",
     lastName: "Vishwakarma",
@@ -11,19 +16,24 @@ export const USER = {
 
             name: "Github",
             url: "https://github.com/shivamvishwakarm",
-            icon: "https://assets.chanhdai.com/images/link-icons/liquid-glass/github.webp"
+            icon: Github
         },
         {
             name: "Linkedin",
             url: "https://www.linkedin.com/in/shivamvisss/",
-            icon: "https://assets.chanhdai.com/images/link-icons/liquid-glass/linkedin.webp"
+            icon: Linkedin
         },
         {
             name: "Twitter",
             url: "https://x.com/shivam_visss",
-            icon: "https://assets.chanhdai.com/images/link-icons/liquid-glass/x.webp"
+            icon: Twitter
 
         },
+        {
+            name: "Mail",
+            url: "mailto:admin@shivam09.tech",
+            icon: Envelope
+        }
 
     ],
     jobTitle: "Full Stack Developer",
@@ -31,23 +41,23 @@ export const USER = {
         {
             company: "Advayu",
             position: "Full Stack Developer",
-            description: `
-    Built the entire frontend using Next.js, TypeScript, Redux, Tailwind CSS, and TanStack Query. 
-
-    Integrated APIs and added real-time features. Wrote unit, integration, and end-to-end tests using Jest, Cypress, and Storybook.
-
-    Worked closely with backend and design teams to deliver a fast and responsive site.
-    `,
+            description: [
+                "Built the entire frontend using Next.js, TypeScript, Redux, Tailwind CSS, and TanStack Query.",
+                "Integrated APIs and added real-time features for a fast and responsive site.",
+                "Wrote unit, integration, and end-to-end tests using Jest, Cypress, and Storybook.",
+                "Collaborated with backend and design teams to deliver maintainable and high-quality solutions."
+            ],
             website: "https://www.advayu.club"
         },
         {
-            company: "",
-            position: "Freelance Developer",
-            description: `
-    Completed 4 full-stack projects for clients on time. Handled both frontend and backend using React, Next.js, Node.js, and MongoDB.
-
-    Built custom features, APIs, and user interfaces. Focused on clean, maintainable code and mobile-friendly design.
-    `,
+            company: "Freelance",
+            position: "Full Stack Developer",
+            description: [
+                "Completed 4 full-stack projects for clients on time using React, Next.js, Node.js, and MongoDB.",
+                "Built custom features, APIs, and user interfaces with a focus on clean, maintainable code.",
+                "Ensured all projects were mobile-friendly and responsive.",
+                "Handled both frontend and backend development to deliver complete solutions."
+            ],
             website: "https://www.shivam09.tech"
         }
     ],
@@ -59,7 +69,7 @@ I don’t just code — I explore. I talk to builders, dive into their perspecti
 
 I say: “Curiosity can make you great.”
 And I try to prove that with every project I take on.`,
-    shortBio: `Curiosity-led builder — learning by doing, building by understanding.`,
+    shortBio: `Build fast, Break fast, Learn fast`,
     keywords: "shivam vishwakarma, shivamvisss, shivam09, 09shivam, shivam_visss ",
     projects: [
         {

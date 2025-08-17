@@ -4,7 +4,7 @@ export default function Separator({ className }: { className?: string }) {
         <div
             className={cn(
                 "relative flex h-1 w-full  border-edge",
-                "before:absolute before:-left-[100vw] before:-z-1 before:h-[0.5px] before:w-[176vw]",
+                "before:absolute md:before:-left-[100vw] before:-z-1 before:h-[0.5px] md:before:w-[176vw] before:w-[97vw]",
                 "before:bg-neutral-500",
                 className
             )}

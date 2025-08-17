@@ -102,25 +102,7 @@ export const FollowPointer = ({
                 opacity: 0,
             }}
         >
-            <svg
-                className="size-8 rotate-40"
-                version="1.1"
-                id="icons"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0"
-                y="0"
-                viewBox="0 0 128 128"
-                xmlSpace="preserve"
-
-            >
-                <g id="row1">
-                    <path
-                        id="nav:2_3_"
-                        d="M64 1 17.9 127 64 99.8l46.1 27.2L64 1zm0 20.4 32.6 89.2L64 91.3V21.4z"
-                        fill="#191919"
-                    />
-                </g>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className=" "><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
             <motion.div
 
                 initial={{
@@ -136,11 +118,11 @@ export const FollowPointer = ({
                     opacity: 0,
                 }}
                 className={
-                    "min-w-max rounded-full bg-neutral-800 px-2 py-2 mt-2 text-xs whitespace-nowrap text-white shadow-md shadow-neutral-800"
+                    "min-w-max rounded-full bg-teal-800 px-2 py-2 mt-2 text-xs whitespace-nowrap text-gray-900 shadow-md shadow-neutral-800"
                 }
             >
                 {title || `William Shakespeare`}
             </motion.div>
-        </motion.div>
+        </motion.div >
     );
 };
