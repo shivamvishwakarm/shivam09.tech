@@ -13,7 +13,7 @@ interface Project {
 
 const ProjectCard = (project: Project) => {
     return (
-        <Link className='group' href={project.url} target='_blank'>
+        <Link className='group ' href={project.url} target='_blank'>
             {/* <FollowerPointerCard
                 title={
                     <p className='text-xl font-bold px-2 bg-clip-text '>

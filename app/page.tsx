@@ -53,6 +53,7 @@ export default function Home() {
 
 
       </div>
+
       <div className="flex items-center justify-center w-full ">
         <p className=" my-5 gradient-text ">Give your best - <Link href="https://github.com/shivamvishwakarm/portfolio-nextjs" className=" italic text-sm font-normal text-neutral-500 underline" target='_blank'> @shivamvishwakarm</Link></p>
       </div>
