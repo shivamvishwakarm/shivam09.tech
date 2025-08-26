@@ -16,7 +16,7 @@ const Experience = () => {
                             <h3 className='md:text-2xl text-md font-semibold '>{job.position} - <Link href={job.website} className=" italic font-normal text-neutral-500 underline" target='_blank'>  {job.company}</Link></h3>
                             {
                                 job.description.map((desc, index) => (
-                                    <li key={index} className='text-sm mt-2 text-neutral-400 italic font-thin selection:bg-gray-400 selection:text-white'>{desc}</li>
+                                    <li key={index} className='font-sans text-sm mt-2 text-neutral-400 italic font-thin selection:bg-primary/20 selection:text-primary'>{desc}</li>
                                 ))
                             }
 

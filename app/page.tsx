@@ -9,7 +9,7 @@ import { USER } from "@/data/user";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative ">
       <div
         className="max-w-3xl mx-auto absolute inset-0 w-full z-[-1] pointer-events-none"
         aria-hidden="true"
@@ -31,8 +31,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto md:max-w-2xl z-100 px-2">
-        <div className="flex gap-3 flex-row pt-16">
+      <div className="mx-auto md:max-w-2xl z-100 px-2 ">
+        <div className="flex gap-3 flex-row pt-16 
+">
 
 
           <Profile />
@@ -60,8 +61,8 @@ export default function Home() {
 
       </div>
 
-      <div className="flex items-center justify-center w-full ">
-        <p className=" my-5 gradient-text ">Give your best - <Link href="https://github.com/shivamvishwakarm/portfolio-nextjs" className=" italic text-sm font-normal text-neutral-500 underline" target='_blank'> @shivamvishwakarm</Link></p>
+      <div className="flex items-center justify-center w-full opacity-20 ">
+        <p className=" my-5 gradient-text ">Give your best - <Link href="https://github.com/shivamvishwakarm/" className=" italic text-sm font-normal text-primary/60 underline" target='_blank'> @shivamvishwakarm</Link></p>
       </div>
     </div >
   );

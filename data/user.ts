@@ -42,10 +42,10 @@ export const USER = {
             company: "Advayu",
             position: "Full Stack Developer",
             description: [
-                "Built the entire frontend using Next.js, TypeScript, Redux, Tailwind CSS, and TanStack Query.",
+                "Shape the entire frontend using Next.js, TypeScript, Redux, Tailwind CSS, Framer motion and TanStack Query.",
                 "Integrated APIs and added real-time features for a fast and responsive site.",
                 "Wrote unit, integration, and end-to-end tests using Jest, Cypress, and Storybook.",
-                "Collaborated with backend and design teams to deliver maintainable and high-quality solutions."
+                "Collaborated with backend and design teams to deliver maintainable and high-quality systems."
             ],
             website: "https://www.advayu.club"
         },
