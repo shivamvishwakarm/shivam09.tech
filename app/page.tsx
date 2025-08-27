@@ -1,15 +1,20 @@
+"use client";
 import Experience from "@/components/experience";
 import Profile from "@/components/Profile";
 import Projects from "@/components/projects";
-import Separator from "@/components/seperator";
 import Link from "next/link";
+import { animate, stagger } from "motion"
+
 
 import Socials from "@/components/socials";
 import { USER } from "@/data/user";
+import StaggerWrapper from "@/components/StaggerWrapper";
 
 export default function Home() {
+
   return (
-    <div className="relative bg-[radial-gradient(var(--color-gray-800)_0.1px,_transparent_1px)] [background-size:10px_10px] ">
+
+    <div id="animated" className="  relative bg-[radial-gradient(var(--color-gray-800)_0.1px,_transparent_1px)] [background-size:10px_10px] ">
       <div
         className="max-w-3xl mx-auto absolute inset-0 w-full z-[-1] pointer-events-none"
         aria-hidden="true"
@@ -26,9 +31,9 @@ export default function Home() {
       />
 
 
-
       <div className="mx-auto md:max-w-3xl z-100  px-4">
-        <div className="flex gap-3 flex-row pt-16 ">
+        {/* <StaggerWrapper > */}
+        <div className="flex gap-4 flex-row pt-16 ">
 
 
           <Profile />
@@ -55,8 +60,7 @@ export default function Home() {
         />
         <Projects />
 
-
-
+        {/* </StaggerWrapper> */}
 
 
       </div>
