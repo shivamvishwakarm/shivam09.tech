@@ -16,7 +16,7 @@ const Projects = () => {
                             name={project.name}
                             description={project.description}
                             url={project.url}
-                            image={project.image || "/no.png"}
+                            image={project.image}
                         />
                     ))
                 }

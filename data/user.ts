@@ -75,7 +75,8 @@ And I try to prove that with every project I take on.`,
         {
             name: "Mock Payment Gateway"
             , description: "A mock Pyament Gateway for testing purposes"
-            , url: "https://github.com/shivamvishwakarm/payment-gateway"
+            , url: "https://github.com/shivamvishwakarm/payment-gateway",
+            image: "/no.png"
 
 
         },
