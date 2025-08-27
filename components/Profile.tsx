@@ -18,8 +18,8 @@ const Profile = () => {
                 ],
             }}
             transition={{
-                delay: 1,
-                duration: 0.7,
+
+                duration: 1,
                 times: [0, 0.5, 1],
                 ease: 'easeInOut',
             }}

@@ -37,7 +37,7 @@ export default function Home() {
 
 
           <Profile />
-          <div className="space-y-4 ">
+          <div className="space-y-4">
             <div>
               <h1 className="md:text-4xl text-2xl font-bold   gradient-text">
                 Shivam Vishwakarma
@@ -51,9 +51,10 @@ export default function Home() {
         </div>
 
         <div
-          className="absolute top-48 left-1/2 transform -translate-x-1/2 w-3xl -z-[1] h-px 
+          className="absolute md:top-48 top-48 left-1/2 transform -translate-x-1/2 md:w-3xl w-full -z-[1] h-px 
              bg-secondary opacity-30"
-        />        <Experience />
+        />
+        <Experience />
         <div
           className="absolute  left-1/2 transform -translate-x-1/2 w-full -z-[1] h-px 
              bg-secondary opacity-30"

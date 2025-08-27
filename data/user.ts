@@ -1,9 +1,7 @@
 import Envelope from "@/components/icons/envelope";
 import Github from "@/components/icons/github";
 import Linkedin from "@/components/icons/linkedin";
-import Phone from "@/components/icons/phone";
 import Twitter from "@/components/icons/twitter";
-import { desc } from "motion/react-client";
 export const USER = {
     firstName: "Shivam",
     lastName: "Vishwakarma",

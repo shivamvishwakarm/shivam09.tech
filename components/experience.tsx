@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Experience = () => {
     return (
-        <div className='mt-2  py-1 ' >
+        <div className='md:mt-2 mt-8  py-1 ' >
 
             <h2 className='text-neutral-500 md:text-2xl text-xl font-semibold mb-3'>Experience </h2>
             <div className='flex flex-col gap-4'>
