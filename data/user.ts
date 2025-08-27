@@ -73,10 +73,10 @@ And I try to prove that with every project I take on.`,
     keywords: "shivam vishwakarma, shivamvisss, shivam09, 09shivam, shivam_visss ",
     projects: [
         {
-            name: "Mock Payment Gateway"
-            , description: "A mock Pyament Gateway for testing purposes"
-            , url: "https://github.com/shivamvishwakarm/payment-gateway",
-            image: "/no.png"
+            name: "Mock Payment Gateway",
+            description: "A mock Pyament Gateway for testing purposes",
+            url: "https://github.com/shivamvishwakarm/payment-gateway",
+            image: "https://drive.google.com/uc?export=view&id=1uOssCT24nKUYoUkdceeUNV2nMZtw9EQq"
 
 
         },
