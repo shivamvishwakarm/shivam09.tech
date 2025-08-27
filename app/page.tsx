@@ -9,31 +9,26 @@ import { USER } from "@/data/user";
 
 export default function Home() {
   return (
-    <div className="relative ">
+    <div className="relative bg-[radial-gradient(var(--color-gray-800)_0.1px,_transparent_1px)] [background-size:10px_10px] ">
       <div
         className="max-w-3xl mx-auto absolute inset-0 w-full z-[-1] pointer-events-none"
         aria-hidden="true"
       >
-        <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-secondary via-primary to-primary opacity-50" />
-        <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-secondary via-primary to-primary opacity-50" />
+        <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-secondary via-primary to-primary opacity-20" />
+        <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-secondary via-primary to-primary opacity-20" />
       </div>
 
       {/* Decorative horizontal line */}
-      <div
-        className="absolute inset-0 w-[50.7%] z-0 pointer-events-none"
-        aria-hidden="true"
-      >
-        <div className="relative top-10 w-full flex h-px  border-edge">
-          <div
-            className="absolute left-1/2 -translate-x-1/2 -z-[1] h-px w-[200%]
-                 bg-gradient-to-b from-secondary to-primary"
-          />
-        </div>
-      </div>
 
-      <div className="mx-auto md:max-w-2xl z-100 px-2 ">
-        <div className="flex gap-3 flex-row pt-16 
-">
+      <div
+        className="absolute top-10 left-1/2 transform -translate-x-1/2 w-full -z-[1] h-px 
+             bg-gradient-to-b from-teal-900 to-primary opacity-30"
+      />
+
+
+
+      <div className="mx-auto md:max-w-3xl z-100  px-4">
+        <div className="flex gap-3 flex-row pt-16 ">
 
 
           <Profile />
@@ -50,9 +45,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-px md:mt-0 rounded-full transform md:-translate-x-[57px] md:w-[52.2vw] w-full bg-[#565656]" />
-        <Experience />
-        <Separator />
+        <div
+          className="absolute top-48 left-1/2 transform -translate-x-1/2 w-3xl -z-[1] h-px 
+             bg-secondary opacity-30"
+        />        <Experience />
+        <div
+          className="absolute  left-1/2 transform -translate-x-1/2 w-full -z-[1] h-px 
+             bg-secondary opacity-30"
+        />
         <Projects />
 
 
