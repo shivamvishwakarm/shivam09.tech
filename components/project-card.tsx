@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FollowerPointerCard } from './following-pointer'
 import Arrow from './icons/arrow';
 
 interface Project {

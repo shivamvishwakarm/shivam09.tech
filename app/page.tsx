@@ -8,7 +8,7 @@ import { animate, stagger } from "motion"
 
 import Socials from "@/components/socials";
 import { USER } from "@/data/user";
-import StaggerWrapper from "@/components/StaggerWrapper";
+// import StaggerWrapper from "@/components/StaggerWrapper";
 
 export default function Home() {
 

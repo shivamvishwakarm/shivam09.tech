@@ -1,9 +1,6 @@
 import React from 'react'
-import Button from './button'
-import Envelope from '@/components/icons/envelope'
 import { USER } from '@/data/user'
-import Link from 'next/link'
-import Image from 'next/image'
+
 
 const Socials = () => {
     return (
