@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Experience = () => {
     return (
-        <div className='md:mt-2 mt-8  py-1 ' >
+        <div className='md:mt-2 mt-8  py-1 mb-4' >
 
             <h2 className='text-neutral-500 md:text-2xl text-xl font-semibold mb-3'>Experience </h2>
             <div className='flex flex-col gap-4'>
@@ -16,7 +16,7 @@ const Experience = () => {
                             <h3 className='md:text-2xl text-md font-semibold '>{job.position} - <Link href={job.website} className=" italic font-normal text-neutral-500 underline" target='_blank'>  {job.company}</Link></h3>
                             {
                                 job.description.map((desc, index) => (
-                                    <li key={index} className='font-sans text-md mt-2 text-neutral-400 italic font-thin selection:bg-primary/20 selection:text-primary'>{desc}</li>
+                                    <li key={index} className='ml-10 font-sans text-md mt-2 text-neutral-400 italic font-thin selection:bg-primary/20 selection:text-primary'>{desc}</li>
                                 ))
                             }
 

@@ -18,13 +18,11 @@ const Profile = () => {
                 ],
             }}
             transition={{
-
+                delay: 1,
                 duration: 1,
                 times: [0, 0.5, 1],
                 ease: 'easeInOut',
             }}
-
-
             quality={100} draggable={false} className='md:size-32 size-10 select-none mask-radial-from-16% border border-gray-400 brightness-90 ' src="/profile.png" alt="profile" width={50} height={50} />
 
 
