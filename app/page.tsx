@@ -3,12 +3,9 @@ import Experience from "@/components/experience";
 import Profile from "@/components/Profile";
 import Projects from "@/components/projects";
 import Link from "next/link";
-import { animate, stagger } from "motion"
-
-
 import Socials from "@/components/socials";
 import { USER } from "@/data/user";
-// import StaggerWrapper from "@/components/StaggerWrapper";
+import GitHubCalendar from 'react-github-calendar';
 
 export default function Home() {
 
@@ -60,13 +57,27 @@ export default function Home() {
              bg-secondary opacity-30"
         />
         <Projects />
+        <div className="mt-10">
+          <GitHubCalendar username="shivamvishwakarm" />
+        </div>
 
-        {/* </StaggerWrapper> */}
+      </div>
+
+      <div className="flex flex-col items-center my-8">
+        <h2 className="text-xl font-semibold mb-4">GitHub Contributions</h2>
+
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=shivamvishwakarm&show_icons=true&theme=dark&hide_border=true"
+          alt="GitHub Stats"
+          className="rounded-xl shadow-md mt-4"
+        />
 
 
       </div>
 
-      <div className="flex items-center justify-center w-full opacity-20 ">
+
+
+      <div className="flex items-center justify-center w-full opacity-20 pb-10">
         <p className=" my-5 gradient-text ">Give your best - <Link href="https://github.com/shivamvishwakarm/" className=" italic text-sm font-normal text-primary/60 underline" target='_blank'> @shivamvishwakarm</Link></p>
       </div>
     </div >
