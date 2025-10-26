@@ -34,7 +34,7 @@ export const USER = {
         }
 
     ],
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Full Stack Web Developer",
     job: [
         {
             company: "Advayu",
