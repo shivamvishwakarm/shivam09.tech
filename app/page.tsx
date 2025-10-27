@@ -1,22 +1,21 @@
 import ProfileImage from "@/components/Profile";
 import Socials from "@/components/socials";
 import { USER } from "@/data/user";
-import Image from "next/image";
 import PRCard from "@/components/cards/pr-card";
 import { GitHubContributions } from "@/components/ui/contribution-graph/contribute";
 import Link from "next/link";
-import DarkLightMode from "@/components/dark-light-mode";
+// import DarkLightMode from "@/components/dark-light-mode";
 import { FileText } from "lucide-react";
 import Experience from "@/components/experience";
 
 export default function Home() {
   return (
-    <div className="h-full w-full bg-white dark:bg-black">
+    <div className="h-[120vh] w-full bg-white dark:bg-black">
       <div className="max-w-auto mx-auto px-4 md:max-w-3xl">
         <div className="flex flex-row items-center justify-between gap-4 pt-16 ">
           <ProfileImage />
           <div className="relative  ">
-            <DarkLightMode />
+            {/* <DarkLightMode /> */}
             <h1 className="text-[1.8rem] font-bold md:text-6xl  dark:text-white">
               {USER.firstName} {USER.lastName}
             </h1>
