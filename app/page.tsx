@@ -30,10 +30,10 @@ export default function Home() {
 
         <div className="mt-6 flex w-full items-end justify-end">
           <Socials />
-          <button className="flex items-center gap-1 rounded-full bg-neutral-500 px-6 py-2 text-lg font-medium text-white dark:text-black">
+          <Link target="_blank"  href={"/Shivam_1yrExp_MERN.pdf"} className="flex items-center gap-1 rounded-full bg-neutral-500 px-6 py-2 text-lg font-medium text-white dark:text-black">
             <FileText />
             Resume
-          </button>
+          </Link>
         </div>
 
         <div className="mt-8 flex flex-col">
