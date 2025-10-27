@@ -51,6 +51,7 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -58,10 +59,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+         
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} antialiased dark:bg-neutral-900 text-black dark:text-white`}
       >
-            <ThemeProvider>
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 
         {children}
             </ThemeProvider>
