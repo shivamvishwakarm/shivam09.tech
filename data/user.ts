@@ -2,6 +2,8 @@ import Envelope from "@/components/icons/envelope";
 import Github from "@/components/icons/github";
 import Linkedin from "@/components/icons/linkedin";
 import Twitter from "@/components/icons/twitter";
+
+
 export const USER = {
     firstName: "Shivam",
     lastName: "Vishwakarma",
@@ -45,7 +47,12 @@ export const USER = {
                 "Wrote unit, integration, and end-to-end tests using Jest, Cypress, and Storybook.",
                 "Collaborated with backend and design teams to deliver maintainable and high-quality systems."
             ],
-            website: "https://www.advayu.club"
+            start: "DEC 2024",
+            end: "SEP 2025",
+            location: "Bengalore, India (remote)",
+
+            website: "https://www.advayu.club",
+            logo: "/logo/company/advayu.png"
         },
         {
             company: "Freelance",
@@ -56,7 +63,12 @@ export const USER = {
                 "Ensured all projects were mobile-friendly and responsive.",
                 "Handled both frontend and backend development to deliver complete solutions."
             ],
-            website: "https://www.shivam09.tech"
+            start: "DEC 2022",
+            end: "SEP 2024",
+           location: "Bihar, India (remote)",
+            website: "https://www.shivam09.tech",
+                     
+
         }
     ],
     about: `I build things that excite me — usually by chasing ideas that spark curiosity or help me learn something new.
@@ -97,7 +109,22 @@ And I try to prove that with every project I take on.`,
             url: "https://github.com/shivamvishwakarm/file-upload-ui-library",
             image: "https://drive.google.com/uc?export=view&id=1uvk8EwvnSMUlTjFFCqKxlwjFhGe9Zelz",
         }
-    ]
+    ],
 
+    PR: [
+        {
+            title: "Create a custom code block plugin of editor js",
+            link: "https://github.com/the-monkeys/the_monkeys/pull/455"
+        },
+        {
+            title: "Remove non static image from blog banner",
+            link: "https://github.com/the-monkeys/the_monkeys/pull/451"
+        },
+        
+        {
+            title: "restrict only .gif and .apng file ext",
+            link: "https://github.com/the-monkeys/the_monkeys/pull/454"
+        }
+    ]
 
 }
