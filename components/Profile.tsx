@@ -4,7 +4,8 @@ import Image from "next/image";
 const ProfileImage = () => {
   return (
     <Image
-      draggable={false}
+    quality={100}
+    priority={true}
       className="size-20 md:size-32 rounded-full "
       src="/profile.png"
       alt="profile"
