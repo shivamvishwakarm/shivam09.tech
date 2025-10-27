@@ -1,34 +1,51 @@
-import React from 'react'
-import { USER } from '@/data/user'
-import Link from 'next/link'
+import React from "react";
+import { USER } from "@/data/user";
+import Image from "next/image";
+import {Dot} from "lucide-react"
+
 
 const Experience = () => {
-    return (
-        <div className='md:mt-2 mt-8  py-1 mb-4' >
-
-            <h2 className='text-neutral-500 md:text-2xl text-xl font-semibold mb-3'>Experience </h2>
-            <div className='flex flex-col gap-4'>
-                {
-                    USER.job.map((job, index) => (
-
-                        <div key={index}>
-
-                            <h3 className='md:text-2xl text-md font-semibold '>{job.position} - <Link href={job.website} className=" italic font-normal text-neutral-500 underline" target='_blank'>  {job.company}</Link></h3>
-                            {
-                                job.description.map((desc, index) => (
-                                    <li key={index} className='ml-10 font-sans text-md mt-2 text-neutral-400 italic font-thin selection:bg-primary/20 selection:text-primary'>{desc}</li>
-                                ))
-                            }
-
-
-                        </div>
-
-                    ))
-                }
+  return (
+    <div className="mt-8 mb-4 py-1 md:mt-2">
+      <h2 className="mb-3 text-xl font-semibold text-neutral-500 md:text-2xl">
+        Experience{" "}
+      </h2>
+      <div className="flex flex-col gap-4 ">
+        {USER.job.map((job, index) => (
+          <div key={index} className="flex items-center gap-2   ">
+           
+           {job.logo ?     <Image
+              src={job.logo || ""}
+              alt={job.company}
+              width={30}
+              height={30}
+              className="border-muted-foreground rounded-full border border-dashed"
+            /> : <Dot className="dark:text-white border border border-dashed rounded-full border-muted-foreground"/>}
+        
+            <div className="flex justify-between w-full">
+            <div>
+                <p className="text-2xl font-semibold dark:text-white">{job.company}</p>
+                <p className="text-muted-foreground font-medium ">{job.position}</p>
             </div>
 
-        </div >
-    )
-}
+            {/* time */}
+            <div className="flex flex-col items-end ">
+            <div className="flex flex-row items-center gap-2 text-muted-foreground text-sm">
+                <p>{job.start}</p>
+                -
+                <p>{job.end}</p>
+            </div>
+            <div className="dark:text-neutral-200">
+                {job.location}
 
-export default Experience
+            </div>
+            </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Experience;
