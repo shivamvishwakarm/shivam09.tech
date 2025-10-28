@@ -6,7 +6,7 @@ const ProfileImage = () => {
     <Image
     quality={100}
     priority={true}
-      className="size-20 md:size-32 rounded-full "
+      className="size-20 md:size-32 rounded-full"
       src="/profile.png"
       alt="profile"
       width={40}

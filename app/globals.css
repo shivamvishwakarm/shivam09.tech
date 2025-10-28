@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
 @theme inline {
   --color-edge: var(--edge);
   --color-primary: var(--primary);
@@ -41,13 +45,7 @@
   --selection: oklch(100% 0 0);
 }
 
-body {
-  background-color: rgb(255, 255, 255);
-  /* background: url("/dust.svg"), linear-gradient(to bottom, #272727, #150F0F) no-repeat center center fixed; */
-  height: 100vh;
-  width: 100vw;
-  color: rgb(14, 14, 14);
-}
+
 
 .gradient-text {
   @apply bg-clip-text bg-gradient-to-b from-secondary via-neutral-400 to-neutral-200 text-transparent;
