@@ -6,11 +6,11 @@ const ProfileImage = () => {
     <Image
     quality={100}
     priority={true}
-      className="size-20 md:size-32 rounded-full"
+      className="size-16 md:size-32 rounded-full md:border-2 border-1 border-dashed  border-neutral-400 p-1"
       src="/profile.png"
       alt="profile"
-      width={40}
-      height={40}
+      width={100}
+      height={100}
     />
   );
 };

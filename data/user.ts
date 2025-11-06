@@ -66,7 +66,6 @@ export const USER = {
             start: "DEC 2022",
             end: "SEP 2024",
            location: "Bihar, India (remote)",
-            website: "https://www.shivam09.tech",
                      
 
         }
@@ -84,11 +83,9 @@ And I try to prove that with every project I take on.`,
     projects: [
         {
             name: "Mock Payment Gateway",
-            description: "A mock Pyament Gateway for testing purposes",
+            description: "A mock Payment Gateway for testing purposes",
             url: "https://github.com/shivamvishwakarm/payment-gateway",
             image: "https://drive.google.com/uc?export=view&id=1uOssCT24nKUYoUkdceeUNV2nMZtw9EQq"
-
-
         },
 
         {
@@ -113,18 +110,26 @@ And I try to prove that with every project I take on.`,
 
     PR: [
         {
-            title: "Create a custom code block plugin of editor js",
+            title: "Custom code block plugin of editor.js",
             link: "https://github.com/the-monkeys/the_monkeys/pull/455"
         },
         {
+            title: "Custom embed block for editor.js",
+            link: "https://github.com/the-monkeys/the_monkeys/pull/463"
+        },
+       
+        {
+            title: "Docker Setup",
+            link: "https://github.com/the-monkeys/the_monkeys/pull/464"
+        },
+         {
             title: "Remove non static image from blog banner",
             link: "https://github.com/the-monkeys/the_monkeys/pull/451"
         },
-        
         {
             title: "restrict only .gif and .apng file ext",
             link: "https://github.com/the-monkeys/the_monkeys/pull/454"
-        }
+        },
     ]
 
 }

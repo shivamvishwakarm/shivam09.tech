@@ -1,8 +1,8 @@
 import React from "react";
 import { USER } from "@/data/user";
 import Image from "next/image";
-import {Dot} from "lucide-react"
-
+import { ArrowUpRight, Dot, Globe } from "lucide-react";
+import Link from "next/link";
 
 const Experience = () => {
   return (
@@ -10,36 +10,47 @@ const Experience = () => {
       <h2 className="mb-3 text-xl font-semibold text-neutral-500 md:text-2xl">
         Experience{" "}
       </h2>
-      <div className="flex flex-col gap-4 ">
+      <div className="flex w-full flex-col gap-4">
         {USER.job.map((job, index) => (
-          <div key={index} className="flex items-center gap-2   ">
-           
-           {job.logo ?     <Image
-              src={job.logo || ""}
-              alt={job.company}
-              width={30}
-              height={30}
-              className="border-muted-foreground rounded-full border border-dashed"
-            /> : <Dot className="dark:text-white border border border-dashed rounded-full border-muted-foreground"/>}
-        
-            <div className="flex justify-between w-full">
+          <div
+            key={index}
+            className="flex flex-col justify-between gap-2 md:flex-row"
+          >
             <div>
-                <p className="text-2xl font-semibold dark:text-white">{job.company}</p>
-                <p className="text-muted-foreground font-medium ">{job.position}</p>
+              <div className="flex items-center gap-2">
+                {job.logo ? (
+                  <Image
+                    src={job.logo || ""}
+                    alt={job.company}
+                    width={30}
+                    height={30}
+                    className="border-muted-foreground rounded-full"
+                  />
+                ) : (
+                  <Dot className="border-muted-foreground rounded-full border border-dashed dark:text-white" />
+                )}
+
+                <Link href={job.website || "#"} className="flex flex-row items-center">
+                  <p className="text-2xl font-semibold dark:text-white">
+                    {job.company}
+                  </p>
+
+                  <ArrowUpRight size={16} className="text-neutral-500" />
+                </Link>
+              </div>
+              <div>
+                <p className="text-muted-foreground ml-8 font-medium">
+                  {job.position}
+                </p>
+              </div>
             </div>
 
             {/* time */}
-            <div className="flex flex-col items-end ">
-            <div className="flex flex-row items-center gap-2 text-muted-foreground text-sm">
-                <p>{job.start}</p>
-                -
-                <p>{job.end}</p>
-            </div>
-            <div className="dark:text-neutral-200">
-                {job.location}
-
-            </div>
-            </div>
+            <div className="ml-8 flex flex-col-reverse items-start md:flex-col">
+              <div className="text-muted-foreground flex flex-row items-center gap-2 text-sm">
+                <p>{job.start}</p>-<p>{job.end}</p>
+              </div>
+              <div className="dark:text-neutral-200">{job.location}</div>
             </div>
           </div>
         ))}

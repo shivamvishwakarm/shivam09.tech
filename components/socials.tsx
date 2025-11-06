@@ -6,7 +6,7 @@ const Socials = () => {
     return (
         <div className='grid grid-cols-5 gap-x-2 gap-y-2 '>
 
-            <div className='space-x-2 col-span-4 rounded-lg flex items-end justify-end'>
+            <div className='space-x-2 col-span-4 rounded-lg flex md:items-end md:justify-end'>
                 {
                     USER.socialLinks.map((socials) => (
                         <a
@@ -18,7 +18,7 @@ const Socials = () => {
                         >
                             <socials.icon
                             color="#666666"
-                                className="text-neutral-500 shadow-3xl size-10 "
+                                className="text-neutral-500 shadow-3xl md:size-10 size-8 "
                                 width={35}
                                 height={35}
                                 aria-label={socials.name}

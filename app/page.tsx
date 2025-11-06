@@ -10,13 +10,13 @@ import Experience from "@/components/experience";
 
 export default function Home() {
   return (
-    <div className="h-[120vh] w-full bg-white dark:bg-black">
+    <div className="md:h-[150vh] h-[170vh] w-full bg-white dark:bg-black">
       <div className="max-w-auto mx-auto px-4 md:max-w-3xl">
-        <div className="flex flex-row items-center justify-between gap-4 pt-16 ">
+        <div className="grid grid-cols-4  md:items-center gap-4 pt-16 w-full">
           <ProfileImage />
-          <div className="relative  ">
+          <div className="relative col-span-3 ">
             <DarkLightMode />
-            <h1 className="text-[1.8rem] font-bold md:text-6xl  dark:text-white">
+            <h1 className="md:text-[3.4rem] text-[1.47rem] font-bold md:text-6xl  dark:text-white ">
               {USER.firstName} {USER.lastName}
             </h1>
             <p
@@ -28,10 +28,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-6 flex w-full items-end justify-end">
+        <div className="mt-6 flex md:w-full md:items-center md:justify-end ">
           <Socials />
-          <Link target="_blank"  href={"/Shivam_1yrExp_MERN.pdf"} className="flex items-center gap-1 rounded-full bg-neutral-500 px-6 py-2 text-lg font-medium text-white dark:text-black">
-            <FileText />
+          <Link target="_blank"  href={"/Shivam_1yrExp_MERN.pdf"} className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-black bg-background btn-inner-shadow hover:bg-accent  dark:bg-[#737373] dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 text-black">
+            <FileText className="md:size-5 size-4" />
             Resume
           </Link>
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="mx-auto -mt-2">
             <Link
               target="_blank"
-              className="rounded-lg bg-neutral-100 dark:bg-primary px-3 py-1 text-neutral-500 dark:text-neutral-100"
+              className="dark:shadow-md shadow-neutral-800 rounded-lg bg-neutral-100 dark:bg-[#1d1d1d] px-3 py-1 text-neutral-500 dark:text-neutral-100"
               href="https://github.com/pulls?q=is%3Apr+author%3Ashivamvishwakarm+archived%3Afalse+is%3Aclosed"
             >
               see more
@@ -59,9 +59,6 @@ export default function Home() {
           <GitHubContributions />
         </div>
       </div>
-
-
-
 
     </div>
   );
