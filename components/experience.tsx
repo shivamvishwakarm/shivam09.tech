@@ -22,9 +22,9 @@ const Experience = () => {
                   <Image
                     src={job.logo || ""}
                     alt={job.company}
-                    width={30}
-                    height={30}
-                    className="border-muted-foreground rounded-full"
+                    width={32}
+                    height={32}
+                    className="border-muted-foreground rounded-full border border-dashed p-0.5"
                   />
                 ) : (
                   <Dot className="border-muted-foreground rounded-full border border-dashed dark:text-white" />
@@ -47,7 +47,7 @@ const Experience = () => {
 
             {/* time */}
             <div className="ml-8 flex flex-col-reverse items-start md:flex-col">
-              <div className="text-muted-foreground flex flex-row items-center gap-2 text-sm">
+              <div className="text-muted-foreground flex flex-row items-center justify-end w-full gap-2 text-sm">
                 <p>{job.start}</p>-<p>{job.end}</p>
               </div>
               <div className="dark:text-neutral-200">{job.location}</div>

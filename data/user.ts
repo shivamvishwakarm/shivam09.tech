@@ -110,6 +110,10 @@ And I try to prove that with every project I take on.`,
 
     PR: [
         {
+    title: "Fix: blog author permission via ip validation",
+            link: "https://github.com/the-monkeys/monkeys_engine/pull/333"
+        },
+        {
             title: "Custom code block plugin of editor.js",
             link: "https://github.com/the-monkeys/the_monkeys/pull/455"
         },
