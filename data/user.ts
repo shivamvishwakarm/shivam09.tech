@@ -109,6 +109,11 @@ And I try to prove that with every project I take on.`,
     ],
 
     PR: [
+          
+        {
+            title: "Docker setup + GitHub Actions to push Image to GHCR ",
+            link: "https://github.com/the-monkeys/the_monkeys/pull/482"
+        },
         {
     title: "Fix: blog author permission via ip validation",
             link: "https://github.com/the-monkeys/monkeys_engine/pull/333"
@@ -121,11 +126,7 @@ And I try to prove that with every project I take on.`,
             title: "Custom embed block for editor.js",
             link: "https://github.com/the-monkeys/the_monkeys/pull/463"
         },
-       
-        {
-            title: "Docker Setup",
-            link: "https://github.com/the-monkeys/the_monkeys/pull/464"
-        },
+     
          {
             title: "Remove non static image from blog banner",
             link: "https://github.com/the-monkeys/the_monkeys/pull/451"
