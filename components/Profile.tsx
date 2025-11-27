@@ -1,17 +1,45 @@
 "use client";
 import React from "react";
+import { Dialog } from "./ui/dialog";
+import { Eye } from "lucide-react";
+import image from "../public/image1.jpg"
 import Image from "next/image";
 const ProfileImage = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
-    <Image
-    quality={100}
-    priority={true}
-      className="size-16 md:size-32 rounded-full md:border-2 border-1 border-dashed  border-neutral-400 p-1"
-      src="/profile.png"
-      alt="profile"
-      width={100}
-      height={100}
-    />
+    <>
+      <div
+        onClick={() => setIsOpen(true)}
+        className="cursor-pointer group relative inline-block"
+      >
+        <Image
+          priority
+          quality={100}
+          className="rounded-full border-sky-500 border p-1 border-dashed relative z-10 group-hover:border-none"
+          src={image}
+          width={100}
+          height={100}
+          alt="profile"
+        />
+        <div className="absolute inset-0 m-1 rounded-full bg-black/40 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 -left-18">
+          <Eye className="text-white w-6 h-6" />
+        </div>
+      </div>
+
+      <Dialog isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <div className="relative w-[80vw] max-w-[500px] aspect-square rounded-full overflow-hidden border-4 border-sky-500 border-dashed p-1 bg-background">
+          <Image
+            src={image}
+            alt="profile preview"
+            fill
+            className="object-cover rounded-full"
+            quality={100}
+            priority
+          />
+        </div>
+      </Dialog>
+    </>
   );
 };
 

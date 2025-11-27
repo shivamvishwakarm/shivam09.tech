@@ -7,10 +7,11 @@ import Link from "next/link";
 import DarkLightMode from "@/components/dark-light-mode";
 import { FileText } from "lucide-react";
 import Experience from "@/components/experience";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <div className="h-[170vh] w-full bg-white md:h-[150vh] dark:bg-black">
+    <div className="w-full">
       <div className="max-w-auto mx-auto px-4 md:max-w-3xl">
         <div className="grid w-full grid-cols-4 gap-4 pt-16 md:items-center">
           <ProfileImage />
@@ -41,6 +42,9 @@ export default function Home() {
         </div>
 
         <div className="mt-8 flex flex-col  ">
+          <h3 className="mb-3 text-xl font-semibold text-neutral-500 ">
+            Open source
+          </h3>
           <div className="flex flex-col gap-2">
             {USER.PR.map((pr, index) => (
               <PRCard key={index} {...pr} />
@@ -58,6 +62,7 @@ export default function Home() {
         </div>
 
         <Experience />
+        <Projects />
         <div className="mt-8">
           <GitHubContributions />
         </div>

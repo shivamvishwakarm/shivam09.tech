@@ -65,8 +65,8 @@ export const USER = {
             ],
             start: "DEC 2022",
             end: "SEP 2024",
-           location: "Bihar, India (remote)",
-                     
+            location: "Bihar, India (remote)",
+
 
         }
     ],
@@ -81,41 +81,41 @@ And I try to prove that with every project I take on.`,
     shortBio: `Build fast, Break fast, Learn fast`,
     keywords: "shivam vishwakarma, shivamvisss, shivam09, 09shivam, shivam_visss ",
     projects: [
+
+        {
+            name: "Groww - Trading platform",
+            description: "A mock Payment Gateway for testing purposes",
+            url: "https://groww.shivam09.tech",
+            github: "https://github.com/shivamvishwakarm/mini-groww-be",
+
+            techStack: ["Node.js", "Express", "MongoDB", "Socket.io", "React", "Vite"]
+        },
         {
             name: "Mock Payment Gateway",
             description: "A mock Payment Gateway for testing purposes",
             url: "https://github.com/shivamvishwakarm/payment-gateway",
-            image: "https://drive.google.com/uc?export=view&id=1uOssCT24nKUYoUkdceeUNV2nMZtw9EQq"
+            github: "https://github.com/shivamvishwakarm/payment-gateway",
+            techStack: ["Node.js", "Express", "MongoDB", "React", "Monorepo"]
         },
 
-        {
-            name: "RebelsFly",
-            description: "Landing page for aviation institute",
-            url: "https://www.rebelsfly.com",
-            image: "https://drive.google.com/uc?export=view&id=13ccQhtW_WmFDqNhL4nKUrISOEEZxtovC",
-        },
+
         {
             name: "Snake and Ladder",
             description: "A websocket package for snake and ladder game",
             url: "https://www.npmjs.com/package/snake-ladder-ws",
-            image: "https://drive.google.com/uc?export=view&id=1KvEPcGY7gphXW4nHhKoMQxA5L0TElLIc",
-        },
-        {
-            name: "File uploader",
-            description: "A file uploader for the web package",
-            url: "https://github.com/shivamvishwakarm/file-upload-ui-library",
-            image: "https://drive.google.com/uc?export=view&id=1uvk8EwvnSMUlTjFFCqKxlwjFhGe9Zelz",
+            github: "https://github.com/shivamvishwakarm/snake_ladder_ws",
+            techStack: ["Node.js", "WebSocket", "TypeScript"]
         }
     ],
 
     PR: [
-          
+
         {
             title: "Docker setup + GitHub Actions to push Image to GHCR ",
             link: "https://github.com/the-monkeys/the_monkeys/pull/482"
         },
         {
-    title: "Fix: blog author permission via ip validation",
+            title: "Fix: blog author permission via ip validation",
             link: "https://github.com/the-monkeys/monkeys_engine/pull/333"
         },
         {
@@ -126,8 +126,8 @@ And I try to prove that with every project I take on.`,
             title: "Custom embed block for editor.js",
             link: "https://github.com/the-monkeys/the_monkeys/pull/463"
         },
-     
-         {
+
+        {
             title: "Remove non static image from blog banner",
             link: "https://github.com/the-monkeys/the_monkeys/pull/451"
         },
