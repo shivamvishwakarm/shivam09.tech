@@ -17,7 +17,7 @@ export default function Home() {
           <ProfileImage />
           <div className="relative col-span-3">
             <DarkLightMode />
-            <h1 className="text-[1.47rem] font-bold md:text-6xl md:text-[3.4rem] dark:text-white">
+            <h1 className="text-[1.47rem] font-bold md:text-6xl md:text-[3.4rem] dark:text-white text-right">
               {USER.firstName} {USER.lastName}
             </h1>
             <p
