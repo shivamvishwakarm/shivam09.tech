@@ -47,8 +47,8 @@ export const USER = {
                 "Wrote unit, integration, and end-to-end tests using Jest, Cypress, and Storybook.",
                 "Collaborated with backend and design teams to deliver maintainable and high-quality systems."
             ],
-            start: "DEC 2024",
-            end: "SEP 2025",
+            start: "SEP 2024",
+            end: "OCT 2025",
             location: "Bengalore, India (remote)",
 
             website: "https://www.advayu.club",
