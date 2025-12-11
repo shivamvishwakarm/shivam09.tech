@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Caveat } from 'next/font/google';
 import { ThemeProvider } from "@/components/theme-provider"
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -52,6 +53,8 @@ export const metadata: Metadata = {
 };
 
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,14 +62,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-         
+      <head>
+
+        {/* Microsoft Clarity - Only load in production */}
+
+        <Script id='microsoft-clarity' strategy='afterInteractive'>
+          {`
+        (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ujyxg00uvm");
+        `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} antialiased dark:bg-neutral-900 text-black dark:text-white`}
       >
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 
-        {children}
-            </ThemeProvider>
+          {children}
+        </ThemeProvider>
 
       </body>
     </html>
