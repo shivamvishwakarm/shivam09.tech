@@ -94,6 +94,20 @@ And I try to prove that with every project I take on.`,
   keywords:
     "shivam vishwakarma, shivamvisss, shivam09, 09shivam, shivam_visss ",
   projects: [
+{name: "Neura Memory",
+      description: "An Unified Memory layer for ai agents",
+      url: "https://github.com/NeuraMemoryAI/NeuraMemory-AI",
+      github: "https://github.com/NeuraMemoryAI/NeuraMemory-AI",
+
+      techStack: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "React",
+        "Vite"
+      ]
+},
+
     {
       name: "Groww - Trading platform",
       description: "A mock Payment Gateway for testing purposes",
@@ -115,14 +129,6 @@ And I try to prove that with every project I take on.`,
       url: "https://github.com/shivamvishwakarm/payment-gateway",
       github: "https://github.com/shivamvishwakarm/payment-gateway",
       techStack: ["Node.js", "Express", "MongoDB", "React", "Monorepo"],
-    },
-
-    {
-      name: "Snake and Ladder",
-      description: "A websocket package for snake and ladder game",
-      url: "https://www.npmjs.com/package/snake-ladder-ws",
-      github: "https://github.com/shivamvishwakarm/snake_ladder_ws",
-      techStack: ["Node.js", "WebSocket", "TypeScript"],
     },
   ],
 
